@@ -2,7 +2,7 @@
 
 --Creacion tabla jugador
 
-CREATE TABLE JUGADOR (IdConductor int(8) NOT NULL AUTO_INCREMENT,
-                          NombreConductor VARCHAR(40) NOT NULL,
+CREATE TABLE JUGADOR (IdJugador int(8) NOT NULL AUTO_INCREMENT,
+                          NombreJugador VARCHAR(40) NOT NULL,
                           PUNTAJE SMALLINT(3),
-                          PRIMARY KEY (IdConductor));
+                          PRIMARY KEY (IdJugador));

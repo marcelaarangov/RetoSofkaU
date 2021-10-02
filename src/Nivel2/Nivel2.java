@@ -10,25 +10,20 @@ package Nivel2;
  * @author Home
  */
 public class Nivel2 {
-    public void Preguntas(int nivel1){
-        switch(nivel1){
-            case(1):System.out.print("¿Cuál es el río más largo del mundo?\na) El nilo\tb) El amazonas\nc) Congo\td) Amur\n -> ");
-                    break;
-            case(2):System.out.print("\n ¿Cuál es el país con más habitantes del mundo?\na) Japon\tb) India\nc) EEUU\td) China I\n -> ");
-                 break;
-            case(3): System.out.print("\n ¿Dónde está Transilvania?\na) Rumania\tb) India\nc) Dubai\td) Mexico\n -> ");
-                 break;
-            case(4): System.out.print("\n ¿Cuál es el océano más grande del mundo?\na) Pacifico\tb) Atlantico\nc) Artico\td) Antartico\n -> ");
-                 break;
-           case(5): System.out.print("\n¿Cuántos lados tiene un heptágono?\na) 5\tb) 6\nc) 7td) 4\n -> ");
-                 break;
-                    
-        }
+    String [] preguntas = new String[6];
+    public void Preguntas(int nivel2){
+        preguntas[1]=("¿Cuál es el río más largo del mundo?\na) El nilo\tb) El amazonas\nc) Congo\td) Amur\n -> ");
+        preguntas[2]=("\n ¿Cuál es el país con más habitantes del mundo?\na) Japon\tb) India\nc) EEUU\td) China \n -> ");
+        preguntas[3]=("\n ¿Dónde está Transilvania?\na) Rumania\tb) India\nc) Dubai\td) Mexico\n -> ");
+        preguntas[4]=("\n ¿Cuál es el océano más grande del mundo?\na) Pacifico\tb) Atlantico\nc) Artico\td) Antartico\n -> ");
+        preguntas[5]=("\n¿Cuántos lados tiene un heptágono?\na) 5\tb) 6\nc) 7\td) 4\n -> ");
+        System.out.println(preguntas[nivel2]);
+            
     }
     
-    public int Respuesta(int nivel1, int resp){
+    public int Respuesta(int nivel2, int resp){
         int acerto=0;
-        switch (nivel1){
+        switch (nivel2){
             case(1):
                 if(resp == 'a')
                    acerto = 1;
